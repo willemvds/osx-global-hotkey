@@ -1,10 +1,9 @@
 osx-global-hotkey
 =================
 
-PLEH.
+```
+clang -framework ApplicationServices main.c -o print-events
+./print-events
+```
 
-This did not work (even running as root) but after updating
-xcode + command line tools it seems to automagically do things
-instead of doing no things at all.
 
-There is hope.

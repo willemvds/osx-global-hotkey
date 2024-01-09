@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
     CFRunLoopSourceRef loopref = CFMachPortCreateRunLoopSource(NULL, port, 0);
     CFRunLoopAddSource(CFRunLoopGetCurrent(), loopref, kCFRunLoopDefaultMode);
 
-    printf("Hello, World!\n");
+    printf("Listening for events (CGEventTapCreate)...\n");
 
     CFRunLoopRun();
 
